@@ -1,0 +1,32 @@
+.transaction-history {
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 13px 10px 15px 4px rgb(248 250 251 / 20%);
+}
+
+.table-head {
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #5bc0e7;
+  text-transform: uppercase;
+}
+
+.table-box {
+  width: 200px;
+}
+
+.type {
+  text-transform: capitalize;
+}
+
+.type,
+.amount,
+.currency {
+  height: 34px;
+  color: rgb(70, 80, 90);
+}
