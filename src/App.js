@@ -1,7 +1,6 @@
 import Profile from './Components/Profile/Profile';
 import Statistics from './Components/Statistics/Statistics';
 import FriendList from './Components/FriendList/FriendList';
-import FriendListItem from './Components/FriendListItem/FriendListItem';
 import TransactionHistory from './Components/TransactionHistory/TransactionHistory';
 
 import { username, tag, location, avatar, stats } from './data/user.json';
@@ -20,19 +19,7 @@ function App() {
         stats={stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      <FriendList friends={friends}>
-        {friends.map(friend => {
-          return (
-            <FriendListItem
-              key={friend.id}
-              avatar={friend.avatar}
-              name={friend.name}
-              isOnline={friend.isOnline}
-              id={friend.id}
-            />
-          );
-        })}
-      </FriendList>
+      <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>
   );
